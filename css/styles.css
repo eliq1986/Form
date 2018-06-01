@@ -1,0 +1,207 @@
+
+/*===SELECTORS=====================*/
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Merriweather', serif;
+ background: linear-gradient(0deg, black, white 45%, white);
+}
+
+fieldset {
+ border: none;
+}
+legend {
+  font-weight: 700;
+  font-size: 1.1em;
+  margin-right: 3.5em;
+  padding: 1em 0 1em 0;
+}
+label {
+  font-weight: 300;
+}
+
+input[class="input flexchild"]{
+  text-align: right;
+  font-size: .8em;
+}
+button[type="submit"] {
+  background-color: #66b2b2;
+  width: 100%;
+  border-radius: .2em;
+  color: white;
+  height: 5%;
+  font-size: 1.2em;
+
+}
+footer {
+  height: 20em;
+  font-size: .8em;
+  text-align: center;
+}
+/*===ID's=============================*/
+div#top {
+  background-color:  #303f50;
+  color: white;
+  letter-spacing: .10em;
+  height: 90px;
+  margin-top: 0;
+}
+div#top h2 {
+ font-size: 1.2em;
+ text-align: center;
+ padding: .2em;
+ padding-top: 1.5em;
+ margin-top: 0;
+}
+div#signup {
+text-align: center;
+
+}
+div#signup h3 {
+  margin-top: 1.4em;
+
+}
+div#signup p {
+  font-size: .8em;
+  font-weight: 300;
+  margin-bottom: 3em;
+
+}
+#solidborder {
+  border-bottom: 4px solid black;
+}
+#container {
+  width: 95%;
+  margin: 0 auto;
+}
+select#select {
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 1.5em;
+  margin-top: 1em;
+  background-color: #f2f2f2;
+  border-radius: .5em;
+  height: 3.3em;
+  font-weight: 300;
+  border: none;
+
+}
+
+#zipcode {
+  width: 50%;
+  padding: 1.2em;
+  margin-bottom: 1.5em;
+  margin-top: 1em;
+  background-color: #f2f2f2;
+  border-radius: .5em;
+  border: none;
+  text-align: right;
+  font-size: .8em;
+}
+#textarea {
+  width: 100%;
+  background-color: #f2f2f2;
+  border: none;
+  resize: none;
+  margin-bottom: 1.8em;
+  margin-top: 1em;
+}
+
+/*===CLASSES==================*/
+.thinborder {
+  padding: .1em;
+  border-bottom: 2px solid black;
+}
+
+.input {
+  width: 100%;
+  padding: 1.2em;
+  margin-bottom: 1.5em;
+  margin-top: 1em;
+  background-color: #f2f2f2;
+  border-radius: .5em;
+  border: none;
+}
+
+p.button-radio {
+  font-size: .9em;
+  margin-top: 0;
+
+}
+label.button-radio {
+  font-size: .9em;
+}
+.button-checkbox {
+  margin-bottom: 1.3em;
+  margin-right: 1em;
+}
+/*=====PSEUDO-CLASSES========*/
+input:hover, textarea#textarea:hover , select:hover, #zipcode:hover, button:hover {
+background-color: #d6f5f5;
+cursor: pointer;
+}
+input:focus, #zipcode:focus, textarea#textarea:focus  {
+transition-property: all;
+transition-duration: .8s;
+background-color: white;
+text-align: left;
+}
+/*=====MEDIA Q=========================*/
+@media (min-width: 768px) {
+
+
+
+/*=====SELECTORS=================*/
+legend {
+    margin-top: 0;
+    padding-top: 2em;
+}
+label {
+    font-size: .8em;
+}
+footer p {
+ margin-top: 2.5em;
+}
+/*=====ID's====*/
+div#signup h3 {
+  margin-bottom: 0;
+  margin-top: 2.5em;
+
+}
+#container {
+
+    margin: 0 auto;
+    max-width: 1000px;
+}
+/*=====CLASSES===================*/
+.input {
+width: 70%;
+}
+.flex-container {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-between;
+}
+.flexchild {
+  align-self: center;
+  text-align: left;
+
+}
+select#select.flexchild {
+  flex-basis: 70%;
+}
+input#zipcode.flexchild {
+  width: 45%;
+
+}
+.flex-containerzip{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-between;
+width: 55%;
+}
+
+}

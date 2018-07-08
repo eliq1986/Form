@@ -1,4 +1,4 @@
-# Responsive Form
+# Responsive Form utilizing media queries.
 
 [DEMO](https://eliq1986.github.io/Form/)
 
